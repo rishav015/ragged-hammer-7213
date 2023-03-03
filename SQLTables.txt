@@ -1,42 +1,37 @@
-use OBS101db;
-Database changed
-1. create table accountant(accName varchar(20), accUsername varchar(20), password varchar(20), acc_id int);
+mysql> show tables;
++--------------------+
+| Tables_in_obs101db |
++--------------------+
+| accountants        |
+| customers          |
+| transactions       |
++--------------------+
 
-desc accountant;
-+-------------+-------------+------+-----+---------+-------+
-| Field       | Type        | Null | Key | Default | Extra |
-+-------------+-------------+------+-----+---------+-------+
-| accName     | varchar(20) | YES  |     | NULL    |       |
-| accUsername | varchar(20) | YES  |     | NULL    |       |
-| password    | varchar(20) | YES  |     | NULL    |       |
-| acc_id      | int         | YES  |     | NULL    |       |
-+-------------+-------------+------+-----+---------+-------+
+mysql> desc accountants;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| username | varchar(20) | YES  |     | NULL    |       |
+| password | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
 
+mysql> desc customers;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| accno    | varchar(24) | NO   | PRI | NULL    |       |
+| username | varchar(12) | YES  |     | NULL    |       |
+| password | varchar(12) | YES  |     | NULL    |       |
+| mobile   | varchar(10) | YES  |     | NULL    |       |
+| balance  | int         | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
 
-
-2. create table customer(accNumber int , username varchar(20), password varchar(20), mobile varchar(11), balance int);
-desc customer;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| accNumber | int         | YES  |     | NULL    |       |
-| username  | varchar(20) | YES  |     | NULL    |       |
-| password  | varchar(20) | YES  |     | NULL    |       |
-| mobile    | varchar(11) | YES  |     | NULL    |       |
-| balance   | int         | YES  |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-
-
-
-3. create table transaction(accNumber int , rec_accNumber int, amount_transferred int , credit int , withdrawn int, amount_recieved int );
-desc transaction;
-+--------------------+------+------+-----+---------+-------+
-| Field              | Type | Null | Key | Default | Extra |
-+--------------------+------+------+-----+---------+-------+
-| accNumber          | int  | YES  |     | NULL    |       |
-| rec_accNumber      | int  | YES  |     | NULL    |       |
-| amount_transferred | int  | YES  |     | NULL    |       |
-| credit             | int  | YES  |     | NULL    |       |
-| withdrawn          | int  | YES  |     | NULL    |       |
-| amount_recieved    | int  | YES  |     | NULL    |       |
-+--------------------+------+------+-----+---------+-------+
+mysql> desc transactions;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| accno        | varchar(24) | NO   | PRI | NULL    |       |
+| debit        | int         | YES  |     | NULL    |       |
+| credit       | int         | YES  |     | NULL    |       |
+| aval_balance | int         | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
