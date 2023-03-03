@@ -1,4 +1,4 @@
-package com.onlinebanking.exception;
+package com.exception;
 
 public class CustomerException extends Exception {
 	

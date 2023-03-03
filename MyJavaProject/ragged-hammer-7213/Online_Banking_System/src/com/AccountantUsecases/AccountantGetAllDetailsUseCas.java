@@ -1,12 +1,12 @@
-package com.onlinebanking.AccountantUsecases;
+package com.AccountantUsecases;
 
 import java.util.List;
 
+import com.bean.CustomerBean;
 import com.dao.AccountantDao;
 import com.dao.AccountantImpl;
-import com.onlinebanking.bean.CustomerBean;
-import com.onlinebanking.exception.AccountantException;
-import com.onlinebanking.exception.CustomerException;
+import com.exception.AccountantException;
+import com.exception.CustomerException;
 
 public class AccountantGetAllDetailsUseCas {
 

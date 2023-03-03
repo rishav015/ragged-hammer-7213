@@ -1,4 +1,4 @@
-package com.onlinebanking.usecases;
+package com.usecases;
 
 import java.util.Scanner;
 

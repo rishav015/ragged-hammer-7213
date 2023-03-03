@@ -6,4 +6,5 @@
  *
  */
 module Online {
+	requires java.sql;
 }

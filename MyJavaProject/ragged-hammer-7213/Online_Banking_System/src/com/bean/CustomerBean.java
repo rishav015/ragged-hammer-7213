@@ -1,4 +1,4 @@
-package com.onlinebanking.bean;
+package com.bean;
 
 public class CustomerBean {
 	

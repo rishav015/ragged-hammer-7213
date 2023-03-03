@@ -1,4 +1,4 @@
-package com.onlinebanking.utility;
+package com.utility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ public class DBUtil {
 		
 		//standard procedure
 		
-		Connection connect = null;
+		Connection connect =null;
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -19,7 +19,7 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 		
-		String url ="jdbc:mysql://localhost:3306/sb101db";
+		String url ="jdbc:mysql://localhost:3306/OBS101db";
 		
 		try {
 			connect = DriverManager.getConnection(url, "root", "9736043994@Ri");

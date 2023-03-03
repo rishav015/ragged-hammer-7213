@@ -1,11 +1,11 @@
-package com.onlinebanking.AccountantUsecases;
+package com.AccountantUsecases;
 
 import java.util.Scanner;
 
+import com.bean.Accountant;
 import com.dao.AccountantDao;
 import com.dao.AccountantImpl;
-import com.onlinebanking.bean.Accountant;
-import com.onlinebanking.exception.AccountantException;
+import com.exception.AccountantException;
 
 public class RegisterAccountantUseCase {
 

@@ -1,10 +1,10 @@
-package com.onlinebanking.usecases;
+package com.usecases;
 
 import java.util.Scanner;
 
 import com.dao.CustomerDao;
 import com.dao.CustomerImpl;
-import com.onlinebanking.exception.CustomerException;
+import com.exception.CustomerException;
 
 public class CustomerWithdrawUseCase {
 
