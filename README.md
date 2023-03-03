@@ -22,3 +22,4 @@ Roles of Customer are
 3. Checking the transaction history
 
 # Flow Chart
+![Flow Chart For Online Banking System (1)](https://user-images.githubusercontent.com/78720189/222687488-429e44a8-ecc6-4f29-b643-920268b71342.jpeg)
