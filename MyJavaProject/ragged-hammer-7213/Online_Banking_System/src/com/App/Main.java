@@ -1,16 +1,16 @@
-package com.onlinebanking.App;
+package com.App;
 
 import java.util.List;
 import java.util.Scanner;
 
+import com.bean.Accountant;
+import com.bean.CustomerBean;
 import com.dao.AccountantDao;
 import com.dao.AccountantImpl;
 import com.dao.CustomerDao;
 import com.dao.CustomerImpl;
-import com.onlinebanking.bean.Accountant;
-import com.onlinebanking.bean.CustomerBean;
-import com.onlinebanking.exception.AccountantException;
-import com.onlinebanking.exception.CustomerException;
+import com.exception.AccountantException;
+import com.exception.CustomerException;
 
 public class Main {
 
@@ -18,11 +18,11 @@ public class Main {
 		
 		Scanner sc= new Scanner(System.in);
 		
-		System.out.println("Welcome to Online Banking Application");
+		System.out.println("Welcome to Online Banking");
 		
-		System.out.println("Please Choose your options");
+		System.out.println("Choose your options");
 		
-		System.out.println("\n1:Enter 1 to Login As Customer \n2:Enter 2 to Login as Accountant");
+		System.out.println("\n1:Customer Login \n2:Accountant Login");
 		
 		int choice =sc.nextInt();
 		

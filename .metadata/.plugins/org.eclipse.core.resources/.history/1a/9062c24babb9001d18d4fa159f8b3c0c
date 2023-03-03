@@ -1,0 +1,27 @@
+package com.AccountantUsecases;
+
+import java.util.Scanner;
+
+import com.dao.AccountantDao;
+import com.dao.AccountantImpl;
+import com.exception.CustomerException;
+
+public class DeleteCustomerUseCase {
+
+	public static void main(String[] args) throws CustomerException {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the account no to delete");
+		
+		int AccountNumber = sc.nextInt();
+		
+		AccountantDao dao = new AccountantImpl();
+		
+		dao.deletaacustomer(AccountNumber);
+		
+		System.out.println("Account deleteed sucessfully");
+
+	}
+
+}

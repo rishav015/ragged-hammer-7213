@@ -1,0 +1,37 @@
+mysql> show tables;
++--------------------+
+| Tables_in_obs101db |
++--------------------+
+| accountants        |
+| customers          |
+| transactions       |
++--------------------+
+
+mysql> desc accountants;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| username | varchar(20) | YES  |     | NULL    |       |
+| password | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+mysql> desc customers;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| accno    | varchar(24) | NO   | PRI | NULL    |       |
+| username | varchar(12) | YES  |     | NULL    |       |
+| password | varchar(12) | YES  |     | NULL    |       |
+| mobile   | varchar(10) | YES  |     | NULL    |       |
+| balance  | int         | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+mysql> desc transactions;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| accno        | varchar(24) | NO   | PRI | NULL    |       |
+| debit        | int         | YES  |     | NULL    |       |
+| credit       | int         | YES  |     | NULL    |       |
+| aval_balance | int         | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+

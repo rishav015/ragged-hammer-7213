@@ -1,8 +1,8 @@
-package com.onlinebanking.AccountantUsecases;
+package com.AccountantUsecases;
 
 import com.dao.AccountantDao;
 import com.dao.AccountantImpl;
-import com.onlinebanking.exception.CustomerException;
+import com.exception.CustomerException;
 
 public class TransactionHistoryAllCustomerUseCase {
 

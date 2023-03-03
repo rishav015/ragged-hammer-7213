@@ -1,4 +1,4 @@
-package com.onlinebanking.utility;
+package com.utility;
 
 import java.sql.Connection;
 

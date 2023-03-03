@@ -1,11 +1,11 @@
-package com.onlinebanking.usecases;
+package com.usecases;
 
 import java.util.Scanner;
 
-import com.dao.CustomerImpl;
+import com.bean.CustomerBean;
 import com.dao.CustomerDao;
-import com.onlinebanking.bean.CustomerBean;
-import com.onlinebanking.exception.CustomerException;
+import com.dao.CustomerImpl;
+import com.exception.CustomerException;
 
 public class GetCustomerUseCase {
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.onlinebanking.exception.CustomerException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bean.Accountant"/>
+    <fullyQualifiedTypeName name="com.exception.AccountantException"/>
+    <fullyQualifiedTypeName name="com.dao.AccountantDao"/>
+    <fullyQualifiedTypeName name="com.dao.AccountantImpl"/>
+    <fullyQualifiedTypeName name="com.bean.CustomerBean"/>
+    <fullyQualifiedTypeName name="com.exception.CustomerException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.dao.CustomerDao"/>
+</qualifiedTypeNameHistroy>
