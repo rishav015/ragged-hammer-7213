@@ -153,7 +153,7 @@ public class AccountantImpl implements AccountantDao {
 		
 		String message ="Delete operation not performed";
 		
-		try(Connection connect =DBUtil.provideConnection()){
+		try(Connection connect = DBUtil.provideConnection()){
 			
 			PreparedStatement ps =connect.prepareStatement("delete from customer where AccountNumber = ? ");
 			
@@ -285,7 +285,7 @@ public class AccountantImpl implements AccountantDao {
 			if(res1>0) {
 				System.out.println("Account Updated Sucessfully");
 			}else {
-				System.out.println("Unsucessful updation ");
+				System.out.println("Unsuccessful updation ");
 			}
 			
 			
