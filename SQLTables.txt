@@ -1,37 +1,47 @@
+mysql> use obs101db;
+Database changed
 mysql> show tables;
-+--------------------+
-| Tables_in_obs101db |
-+--------------------+
-| accountants        |
-| customers          |
-| transactions       |
-+--------------------+
++---------------------+
+| Tables_in_obs101db  |
++---------------------+
+| accountant          |
+| customer            |
+| transaction_history |
++---------------------+
+3 rows in set (0.00 sec)
 
-mysql> desc accountants;
-+----------+-------------+------+-----+---------+-------+
-| Field    | Type        | Null | Key | Default | Extra |
-+----------+-------------+------+-----+---------+-------+
-| username | varchar(20) | YES  |     | NULL    |       |
-| password | varchar(20) | YES  |     | NULL    |       |
-+----------+-------------+------+-----+---------+-------+
+mysql> desc accountant;
++--------------------+-------------+------+-----+---------+----------------+
+| Field              | Type        | Null | Key | Default | Extra          |
++--------------------+-------------+------+-----+---------+----------------+
+| AccountantName     | varchar(20) | YES  |     | NULL    |                |
+| AccountantUsername | varchar(20) | YES  |     | NULL    |                |
+| AccountantPassword | varchar(20) | YES  |     | NULL    |                |
+| Accountant_Id      | int         | NO   | PRI | NULL    | auto_increment |
++--------------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
 
-mysql> desc customers;
-+----------+-------------+------+-----+---------+-------+
-| Field    | Type        | Null | Key | Default | Extra |
-+----------+-------------+------+-----+---------+-------+
-| accno    | varchar(24) | NO   | PRI | NULL    |       |
-| username | varchar(12) | YES  |     | NULL    |       |
-| password | varchar(12) | YES  |     | NULL    |       |
-| mobile   | varchar(10) | YES  |     | NULL    |       |
-| balance  | int         | YES  |     | NULL    |       |
-+----------+-------------+------+-----+---------+-------+
+mysql> desc customer;
++---------------+-------------+------+-----+---------+----------------+
+| Field         | Type        | Null | Key | Default | Extra          |
++---------------+-------------+------+-----+---------+----------------+
+| Accountnumber | int         | NO   | PRI | NULL    | auto_increment |
+| Username      | varchar(20) | YES  |     | NULL    |                |
+| Password      | varchar(20) | YES  |     | NULL    |                |
+| mobile        | varchar(10) | YES  |     | NULL    |                |
+| balance       | int         | YES  |     | NULL    |                |
++---------------+-------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
 
-mysql> desc transactions;
-+--------------+-------------+------+-----+---------+-------+
-| Field        | Type        | Null | Key | Default | Extra |
-+--------------+-------------+------+-----+---------+-------+
-| accno        | varchar(24) | NO   | PRI | NULL    |       |
-| debit        | int         | YES  |     | NULL    |       |
-| credit       | int         | YES  |     | NULL    |       |
-| aval_balance | int         | YES  |     | NULL    |       |
-+--------------+-------------+------+-----+---------+-------+
+mysql> desc transaction_history;
++-------------------------+------+------+-----+---------+-------+
+| Field                   | Type | Null | Key | Default | Extra |
++-------------------------+------+------+-----+---------+-------+
+| AccountNumber           | int  | YES  |     | NULL    |       |
+| Recievers_AccountNumber | int  | YES  |     | NULL    |       |
+| Amount_transfered       | int  | YES  |     | NULL    |       |
+| Credited                | int  | YES  |     | NULL    |       |
+| withdrawn               | int  | YES  |     | NULL    |       |
+| Amount_recieved         | int  | YES  |     | NULL    |       |
++-------------------------+------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
