@@ -9,7 +9,7 @@ public class CheckConnection {
 		Connection connect =DBUtil.provideConnection();
 		
 		
-		System.out.println(connect + " Connection sucessful");
+		System.out.println(connect + " Connection successful");
 
 	}
 

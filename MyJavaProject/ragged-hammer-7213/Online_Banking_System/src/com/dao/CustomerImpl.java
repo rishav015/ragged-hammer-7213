@@ -103,7 +103,7 @@ public class CustomerImpl implements CustomerDao{
 			
 			
 		}else {
-			throw new CustomerException("Customer does not exists" + AccountNumber);
+			throw new CustomerException("Customer does not exist" + AccountNumber);
 		}
 			
 		}catch(SQLException E) {
@@ -171,7 +171,7 @@ public class CustomerImpl implements CustomerDao{
 			int res = ps.executeUpdate();
 			
 			if(res>0) {
-				messag ="Amount "+Amount+" Added Sucessfully Updateded Amount:";
+				messag ="Amount "+Amount+" Added Sucessfully Updated Amount:";
 				
 			}else {
 				messag ="Failed deposit " + Amount;

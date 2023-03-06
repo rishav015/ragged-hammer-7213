@@ -8,7 +8,7 @@ import com.dao.AccountantImpl;
 import com.exception.AccountantException;
 import com.exception.CustomerException;
 
-public class AccountantGetAllDetailsUseCas {
+public class AccountantGetAllDetailsUseCase {
 
 	public static void main(String[] args) {
 		
@@ -18,7 +18,7 @@ public class AccountantGetAllDetailsUseCas {
 			List<CustomerBean> customers =dao.getllCustomerDetails();
 			
 //			customers.forEach(s -> System.out.println(s));
-			int count =0;
+			int count = 0;
 			customers.forEach(s -> {
 				
 				
