@@ -18,25 +18,25 @@ public class Main {
 		
 		Scanner sc= new Scanner(System.in);
 		
-		System.out.println("Welcome to Online Banking");
+		System.out.println("Welcome to Online Banking Application");
 		
-		System.out.println("Choose your options");
+		System.out.println("Select an option");
 		
-		System.out.println("\n1:Customer Login \n2:Accountant Login");
+		System.out.println("\n1:Login as Customer \n2:Login as Accountant ");
 		
 		int choice =sc.nextInt();
 		
 		switch(choice) {
 		    case 1:
-		        System.out.println("Enter your Information FOR CUSTOMER LOGIN");
+		        System.out.println("Enter your Information to CUSTOMER LOGIN");
 		        boolean flag=false;
-		        System.out.println("Enter Account no.");
+		        System.out.println("Enter Account number");
 		        
 		        int AccountNumber =sc.nextInt();
 		        
 		        sc.nextLine();
 		        
-		        System.out.println("Enter Account password");
+		        System.out.println("Enter your password");
 		        String Password =sc.next();
 		        
 		        CustomerDao dao = new CustomerImpl();
@@ -44,7 +44,7 @@ public class Main {
 		        try {
 		            CustomerBean customer = dao.loginCustomer(AccountNumber, Password);
 	                  flag=true;
-		            System.out.println("Welcome to online banking " + customer.getUsername());
+		            System.out.println("Welcome to online banking Application" + customer.getUsername());
 		            
 		            
 		        } catch (CustomerException e) {
@@ -55,9 +55,9 @@ public class Main {
 		        while(flag==true) {
 		            System.out.println("Select your option");
 		            
-		            System.out.println("\n1:Get account information \n2:Deposit money \n3:Withdraw amount \n4:Transfer money \n5:Check your transactional history \n6:Exit");
+		            System.out.println("\n1:Get account information \n2:Deposit money \n3:Withdraw amount \n4:Transfer money \n5:Check your transaction history \n6:Exit");
 		            
-		            System.out.println("Enter the option number :");
+		            System.out.println("Please select an option : ");
 		            
 		            int customerchoice=sc.nextInt();
 		            
@@ -67,7 +67,7 @@ public class Main {
 		                    
 		                    System.out.println("Enter your Information to fetch details");
 		                    
-		                    System.out.println("Enter Customer Accountnum");
+		                    System.out.println("Enter Customer Account number");
 		                    
 		                    int Acc=sc1.nextInt();
 		                    
@@ -156,7 +156,7 @@ public class Main {
 		                    
 		                    int sendersaccount =sc4.nextInt();
 		                    
-		                    System.out.println("Enter Recievers Account number ");
+		                    System.out.println("Enter Reciever's Account number ");
 		                    
 		                    int recieversaccount = sc.nextInt();
 		                    
@@ -227,7 +227,7 @@ public class Main {
 		        try {
 		            Accountant accountant =daoa.loginAccountant(Username, password);
 		            flaga=true;
-		            System.out.println("Login sucessful as Accountant "+accountant.getAccountantName() );
+		            System.out.println("Login successful as Accountant "+accountant.getAccountantName());
 //		          System.out.println(accountant);
 //		          
 		            while(flaga==true) {
@@ -370,7 +370,7 @@ public class Main {
 	                           
 	                        case 6:
 	                            
-	                            System.out.println("Update customer detail ");
+	                            System.out.println("Update customer details ");
 	                            Scanner sca6 = new Scanner(System.in);
 	                            
 	                            System.out.println("Enter the account number where you have to update the name " );
