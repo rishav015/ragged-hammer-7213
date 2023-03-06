@@ -24,3 +24,9 @@ Roles of Customer are
 
 # Flow Chart
 ![Flow Chart For Online Banking System (1)](https://user-images.githubusercontent.com/78720189/222687488-429e44a8-ecc6-4f29-b643-920268b71342.jpeg)
+
+
+
+
+# SQL TABLES
+![image](https://user-images.githubusercontent.com/78720189/223094913-bb6519f3-672c-48cb-8412-fb2e2188e7eb.png)
